@@ -23,7 +23,7 @@ int main(){
     cin >> edad;
 
     cantidadMayores = 0;
-    while(edad > 18){
+    while(edad >= 18){
         //cuento
         cantidadMayores++;
 
