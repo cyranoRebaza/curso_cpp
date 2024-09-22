@@ -18,10 +18,15 @@ int main(){
     int numeroMaximo;
     bool banderaMaximo = false;
 
+    int posicion = 1;
+    int posicionMaximo;
+    bool banderaPosicion = false;
+
     // pido numero
     cout << "Ingrese numero: ";
     cin >> numero;
 
+    posicionMaximo = posicion;
 
     //carga numeros --> cortar con cero
     while(numero != 0){
@@ -30,14 +35,20 @@ int main(){
         if(banderaMaximo == false){
             numeroMaximo = numero;
             banderaMaximo = true;
+            posicionMaximo = posicion;
+            banderaPosicion = true;
         }
         else{
             if(numero > numeroMaximo){
                 numeroMaximo = numero;
+                posicionMaximo = posicion;
             }
         }
 
 
+
+
+        posicion++; // actualizo posicion
         // pido nuevo numero
         cout << "Ingrese numero: ";
         cin >> numero;
@@ -45,6 +56,7 @@ int main(){
 
     // muestro el numero maximo
     cout << "El numero maximo es: " << numeroMaximo << endl;
+    cout << "La posicion es: " << posicionMaximo << endl;
 
     system("pause");
     return 0;
