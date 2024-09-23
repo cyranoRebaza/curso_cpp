@@ -57,6 +57,29 @@ int main(){
             cantidadPrimos++;
             }
 
+        /*
+        //***********************************
+        int divisor = 1;
+        cantidadDivisores = 0;
+
+        while(divisor <= numero){
+
+            //busco divisores exactos
+            if(numero% divisor== 0){
+                cantidadDivisores++;
+             }
+
+            divisor++;
+        }
+
+        //pregunto por la cantidad de divisores
+        if(cantidadDivisores == 2){
+            cantidadPrimos++;
+            }
+
+        //**************************************
+        */
+
 
         // B)PREGUNTO SI EL NUMERO ES PAR
         if(numero % 2 == 0){
